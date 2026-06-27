@@ -1,7 +1,8 @@
 const express = require("express");
 const app = express();
+const config= require("./config/config.js")
 
-const PORT = 3000;
+const PORT = config.PORT ||3000;
 
 app.use(express.json());
 
